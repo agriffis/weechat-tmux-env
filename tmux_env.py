@@ -4,10 +4,20 @@ tmux_env.py -- update weechat environment from tmux
 Copyright 2013 Aron Griffis <agriffis@n01se.net>
 Released under the terms of the GNU General Public License v3
 
+Description:
+
+    This script propagates environment updates from tmux into the weechat
+    process, including the script interpreters.  This allows the process
+    environment to follow the tmux client, such as the X DISPLAY variable,
+    and the DBUS_SESSION_BUS_ADDRESS used for desktop notifications.
+
+    See https://github.com/agriffis/weechat-tmux-env for full usage
+    instructions.
+
 History:
 
-2013-09-30 Aron Griffis <agriffis@n01se.net>
-  version 1: initial release
+    2013-09-30 Aron Griffis <agriffis@n01se.net>
+      version 1: initial release
 """
 
 from __future__ import absolute_import, unicode_literals
